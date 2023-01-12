@@ -1,0 +1,17 @@
+function square(number) {
+
+    return number*number;
+  
+  }
+  
+  function getSquaredElementsAtProperty(obj, property) {
+    // TODO: 여기에 코드를 작성합니다.
+    let key = obj[property];
+    let result = [];
+  
+    if (Array.isArray(key) && property in obj) {
+      result = key.map(square); // 객체 값이 안들어가서 오류뜨는 것으로 추정 코플릿 창에서는 오류없었음
+    }
+    return result;
+  }
+  
