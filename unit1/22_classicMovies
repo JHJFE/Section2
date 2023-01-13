@@ -1,0 +1,15 @@
+function classicMovies(arr, year) {
+  // TODO: 여기에 코드를 작성합니다.
+  let yearBefore = function (obj) {
+    return obj.year < year
+  }
+  
+  let temp = arr.filter(yearBefore);
+
+  let addMoviename = function(obj){
+    return `${obj.title} by ${obj.director}`;
+  }
+
+  let result = temp.map(addMoviename);
+  return result;
+}

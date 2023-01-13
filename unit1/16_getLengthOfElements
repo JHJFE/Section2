@@ -1,0 +1,8 @@
+function getLengthOfElements(arr) {
+  // TODO: 여기에 코드를 작성합니다.
+  return arr.map(len); // 길이값으로 이루어진 함수 생성
+}
+
+function len(arr){ // 배열의 길이 구하는 함수
+  return arr.length;
+}

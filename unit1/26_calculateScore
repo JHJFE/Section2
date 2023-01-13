@@ -1,0 +1,16 @@
+function calculateScore(records, value) {
+    // TODO: Your code here!
+    let check = function (obj){
+      return obj.animal === value;
+    }
+    let result = records.filter(check);
+  
+    let add = function(acc,cur){
+      let nA = acc+cur.score
+      
+      return nA;
+    }
+  
+    let total = result.reduce(add,0);
+    return total;
+  }

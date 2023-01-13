@@ -1,0 +1,14 @@
+function sumOfArraysInArray(arr) {
+  // TODO: 여기에 코드를 작성합니다.
+  let str = arr.reduce(function(acc,cur){
+    let nA = [...acc,...cur];
+    return nA;
+  })
+  let fil = str.filter(function(el){
+    return typeof el === 'number';
+  })
+
+  return fil.reduce(function(acc,cur){
+    return acc + cur;
+  },0)
+}

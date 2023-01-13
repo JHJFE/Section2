@@ -1,0 +1,15 @@
+function getOnlyAllowedToDrink(arr) {
+  // TODO: 여기에 코드를 작성합니다.\
+  let result = [];
+  let over18 = function (obj) {
+    if (obj.age >= 18) {
+      return obj.name;
+    }
+  }
+  result =  arr.filter(over18);
+  
+  let getName = function(obj){
+    return obj.name;
+  }
+  return result.map(getName);
+}

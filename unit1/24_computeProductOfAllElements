@@ -1,0 +1,8 @@
+function computeProductOfAllElements(arr) {
+  // TODO: 여기에 코드를 작성합니다.
+  let squareAdd = function (acc,cur){
+    let nacc = acc *cur;
+    return nacc;
+  }
+  return arr.reduce(squareAdd,1);
+}
